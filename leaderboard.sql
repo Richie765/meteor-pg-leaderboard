@@ -1,7 +1,7 @@
 CREATE TABLE players
 (
   id serial NOT NULL,
-  name character varying(50),
+  name character varying(50) unique,
   score integer NOT NULL,
   CONSTRAINT players_pkey PRIMARY KEY (id)
 )
