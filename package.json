@@ -1,0 +1,13 @@
+{
+  "name": "Leaderboard",
+  "version": "1.0.0",
+  "description": "Leaderboard example using PostgreSQL reactive",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/richie765/meteor-pg-leaderboard.git",
+  "license": "MIT",
+  "dependencies": {
+    "meteor-pg": "richie765/meteor-pg"
+  }
+}
