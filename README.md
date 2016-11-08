@@ -4,7 +4,9 @@ The familiar Meteor Leaderboard example modified to use a PostgreSQL backend, re
 
 # Quick start
 
-This example requires a PostgresSQL server of version at least 9.3.
+This demonstrates the use of https://github.com/Richie765/meteor-pg.
+
+Requires PostgresSQL version 9.3 or above.
 
 ```bash
 # Installation
