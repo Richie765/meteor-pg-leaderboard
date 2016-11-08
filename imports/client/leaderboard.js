@@ -1,3 +1,5 @@
+import "./leaderboard.html";
+
 Template.leaderboard.onCreated(function () {
   this.subscribe('allPlayers');
   this.subscribe('playerScore', 'Maxwell');

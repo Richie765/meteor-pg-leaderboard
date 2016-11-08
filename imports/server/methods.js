@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
-import mpg from 'meteor-pg';
+
+import mpg from '@richie765/meteor-pg';
 
 Meteor.methods({
   'incScore': function(id, amount){
@@ -11,12 +12,14 @@ Meteor.methods({
     // Perform query
 
     let sql = `
+      -- uncomment sleep to test latency compensation
       -- SELECT pg_sleep(0.5);
+
       UPDATE players
-      SET score = score + $1
-      WHERE id = $2
+      SET score = score + $[amount]
+      WHERE id = $[id]
     `;
 
-    mpg.none(sql, [ amount, id ]);
+    mpg.none(sql, { id, amount });
   }
 });
