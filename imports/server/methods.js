@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 
-import mpg from '@richie765/meteor-pg';
+import mpg from 'meteor-pg';
 
 Meteor.methods({
   'incScore': function(id, amount){

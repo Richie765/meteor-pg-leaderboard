@@ -8,6 +8,6 @@
   "repository": "https://github.com/richie765/meteor-pg-leaderboard.git",
   "license": "MIT",
   "dependencies": {
-    "@richie765/meteor-pg": "^1.0.0"
+    "meteor-pg": "^1.0.0"
   }
 }

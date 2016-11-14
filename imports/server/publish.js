@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 
-import mpg from '@richie765/meteor-pg';
+import mpg from 'meteor-pg';
 
 Meteor.publish('allPlayers', function() {
   let sql = 'SELECT id AS _id, * FROM players ORDER BY score DESC';
